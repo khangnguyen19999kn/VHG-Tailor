@@ -1,0 +1,23 @@
+.item1 {
+  grid-area: suit;
+}
+.item2 {
+  grid-area: blazer;
+}
+.item3 {
+  grid-area: trouser;
+}
+.item4 {
+  grid-area: vest;
+}
+.item5 {
+  grid-area: shirt;
+}
+.item6 {
+  grid-area: jacket;
+}
+
+.product-type {
+  display: grid;
+  grid-template-areas: ""
+}

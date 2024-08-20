@@ -11,7 +11,7 @@ import Link from "next/link";
 
 export default function Header() {
   return (
-    <div className="w-full bg-header h-28 sticky top-0 flex justify-center z-10">
+    <div className="w-full bg-header h-28 sticky top-0 flex justify-center z-50">
       <div>
         <div className="min-w-72 h-3/5 flex justify-center items-center">
           <div className="w-48 h-full relative">

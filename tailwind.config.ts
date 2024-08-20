@@ -18,6 +18,12 @@ const config = {
       },
     },
     extend: {
+      backgroundSize: {
+        "size-110": "110% 110%",
+      },
+      transitionProperty: {
+        "background-size": "background-size",
+      },
       colors: {
         header: "#edd8c2",
         ivorywhite: "#fffff0",
@@ -76,7 +82,7 @@ const config = {
       },
     },
   },
-  plugins: [require("tailwindcss-animate")],
+  plugins: [require("tailwindcss-animate"), require("@tailwindcss/line-clamp")],
 } satisfies Config;
 
 export default config;
