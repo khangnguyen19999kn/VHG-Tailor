@@ -18,6 +18,9 @@ const config = {
       },
     },
     extend: {
+      fontFamily: {
+        playFair: ["Playfair Display", "serif"],
+      },
       backgroundSize: {
         "size-110": "110% 110%",
       },

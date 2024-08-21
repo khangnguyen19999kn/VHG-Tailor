@@ -9,7 +9,7 @@ import Image from "next/image";
 
 export default function Footer() {
   return (
-    <div className="w-full bg-orange-100 flex justify-center">
+    <div className="w-full bg-orange-100 flex justify-center mt-10">
       <div className="w-1/2 flex justify-between p-2 gap-2">
         <div className="w-2/5 flex justify-center items-center">
           <div className="w-full h-full relative">
