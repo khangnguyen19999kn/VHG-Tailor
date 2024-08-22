@@ -83,6 +83,27 @@ const config = {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
       },
+      maxWidth: {
+        screen: "100vw",
+      },
+      screens: {
+        mobile: { min: "320px", max: "639px" },
+        // => @media (min-width: 320px) { ... }
+        // '@media (min-width: 320px) and (max-width: 639px)'
+        tablet: { min: "640px", max: "1279px" },
+        // => @media (min-width: 640px) { ... }
+        // '@media (min-width: 640px) and (max-width: 1279px)'
+
+        laptop: { min: "1279px", max: "1919px" },
+        // => @media (min-width: 1024px) { ... }
+        // '@media (min-width: 1279px) and (max-width: 1919px)'
+
+        desktop: "1920px",
+        // => @media (min-width: 1280px) { ... }
+        // '@media (min-width: 1920px)'
+        bigDesktop: "2560px",
+        // => @media (min-width: 2560px) { ... }
+      },
     },
   },
   plugins: [require("tailwindcss-animate"), require("@tailwindcss/line-clamp")],

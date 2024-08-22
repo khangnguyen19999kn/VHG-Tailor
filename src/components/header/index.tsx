@@ -4,8 +4,15 @@ import {
   DropdownMenu,
   DropdownMenuContent,
   DropdownMenuItem,
+  DropdownMenuSeparator,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
+import {
+  Tooltip,
+  TooltipContent,
+  TooltipProvider,
+  TooltipTrigger,
+} from "@/components/ui/tooltip";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -13,7 +20,7 @@ export default function Header() {
   return (
     <div className="w-full bg-header h-28 sticky top-0 flex justify-center z-50">
       <div>
-        <div className="min-w-72 h-3/5 flex justify-center items-center">
+        <div className="h-3/5 flex justify-center items-center">
           <div className="w-48 h-full relative">
             <Link href={"/"}>
               <Image src={"/logo.png"} fill alt="logo" />
@@ -21,28 +28,64 @@ export default function Header() {
           </div>
         </div>
         <div className="flex justify-around items-center w-full h-2/5 min-w-96">
+          <TooltipProvider>
+            <Tooltip>
+              <TooltipTrigger>
+                <Link
+                  href="/gioi-thieu"
+                  className="bold cursor-not-allowed relative group"
+                >
+                  <span>Giới thiệu</span>
+                  <div className="absolute left-0 -bottom-1 w-0 h-0.5 bg-black transition-all duration-300 group-hover:w-full"></div>
+                </Link>
+              </TooltipTrigger>
+              <TooltipContent>
+                <p>Đang phát triển</p>
+              </TooltipContent>
+            </Tooltip>
+          </TooltipProvider>
+
           <DropdownMenu>
             <DropdownMenuTrigger>
-              <p className="bold">Menu</p>
+              <p className="bold relative group">
+                Sản phẩm
+                <div className="absolute left-0 -bottom-1 w-0 h-0.5 bg-black transition-all duration-300 group-hover:w-full"></div>
+              </p>
             </DropdownMenuTrigger>
             <DropdownMenuContent>
-              <DropdownMenuItem>Profile</DropdownMenuItem>
-              <DropdownMenuItem>Billing</DropdownMenuItem>
-              <DropdownMenuItem>Team</DropdownMenuItem>
-              <DropdownMenuItem>Subscription</DropdownMenuItem>
+              <DropdownMenuItem>
+                <Link href={"/products/all"}>Tất cả sản phẩm</Link>
+              </DropdownMenuItem>
+              <DropdownMenuSeparator />
+              <DropdownMenuItem>
+                <Link href={"/products/suit"}>Suit</Link>
+              </DropdownMenuItem>
+              <DropdownMenuItem>
+                <Link href={"/products/jacket"}>Jacket</Link>
+              </DropdownMenuItem>
+              <DropdownMenuItem>
+                <Link href={"/products/shirt"}>Shirt</Link>
+              </DropdownMenuItem>
+              <DropdownMenuItem>
+                <Link href={"/products/blazer"}>Blazer</Link>
+              </DropdownMenuItem>
+              <DropdownMenuItem>
+                <Link href={"/products/vest"}>Vest</Link>
+              </DropdownMenuItem>
+              <DropdownMenuItem>
+                <Link href={"/products/trouser"}>Trouser</Link>
+              </DropdownMenuItem>
             </DropdownMenuContent>
           </DropdownMenu>
 
-          <Link href="/about" className="bold">
-            About
+          <Link href="/quy-trinh" className="bold relative group">
+            Quy trình may
+            <div className="absolute left-0 -bottom-1 w-0 h-0.5 bg-black transition-all duration-300 group-hover:w-full"></div>
           </Link>
 
-          <Link href="/contact" className="bold">
-            Contact
-          </Link>
-
-          <Link href="/blog" className="bold">
-            Blog
+          <Link href="/blogs" className="bold relative group">
+            Blogs
+            <div className="absolute left-0 -bottom-1 w-0 h-0.5 bg-black transition-all duration-300 group-hover:w-full"></div>
           </Link>
         </div>
       </div>

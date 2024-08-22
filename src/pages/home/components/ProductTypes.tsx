@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
+import "@/pages/home/index.css";
 import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
-import "@/pages/home/index.css";
 export default function ProductTypes() {
   const [activeIndex, setActiveIndex] = useState(0);
   const gridRef = useRef<HTMLDivElement>(null);
@@ -27,7 +27,10 @@ export default function ProductTypes() {
     return () => clearInterval(interval);
   }, [activeIndex]);
   return (
-    <div className="bg-red product-type mt-5 p-5 gap-3" ref={gridRef}>
+    <div
+      className="bg-red product-type mt-5 p-5 gap-3 mobile:p-0"
+      ref={gridRef}
+    >
       <div className="item1 relative">
         <p className="absolute top-3 left-5 bold text-white text-3xl">SUIT</p>
         <div className="w-full h-full top-0 left-0 bg-black opacity-0 hover:opacity-50 transition-opacity flex justify-center items-center">

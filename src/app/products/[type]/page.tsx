@@ -1,8 +1,5 @@
-"use client";
-import { useParams } from "next/navigation";
+import ProductTypeListPage from "@/pages/product-type-list";
 
 export default function PageProductType() {
-  const params = useParams();
-  const { type } = params as { type: string };
-  return <div>PageProductType</div>;
+  return <ProductTypeListPage />;
 }

@@ -10,13 +10,13 @@ import Image from "next/image";
 export default function Footer() {
   return (
     <div className="w-full bg-orange-100 flex justify-center mt-10">
-      <div className="w-1/2 flex justify-between p-2 gap-2">
+      <div className="w-1/2 flex justify-between p-2 gap-2 mobile:w-full">
         <div className="w-2/5 flex justify-center items-center">
           <div className="w-full h-full relative">
             <Image src={"/logo.png"} fill alt="logo" />
           </div>
         </div>
-        <div className=" w-2/5 p-2">
+        <div className="bigDesktop:w-2/5 p-2">
           <Accordion type="single" collapsible>
             <AccordionItem value="item-1">
               <AccordionTrigger>

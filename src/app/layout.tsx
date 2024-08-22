@@ -25,7 +25,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={cn("bg-ivorywhite", inter.className)}>
+      <body
+        className={cn(
+          "bg-ivorywhite max-w-screen overflow-x-hidden box-border",
+          inter.className
+        )}
+      >
         <Header />
         <div className="min-h-screen bg-ivorywhite">{children}</div>
         <Footer />

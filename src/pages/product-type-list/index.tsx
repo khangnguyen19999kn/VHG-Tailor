@@ -1,7 +1,9 @@
-import React from 'react'
+import ProductList from "@/pages/product-type-list/components/ProductList";
 
-export default function ProductTypeList() {
+export default function ProductTypeListPage() {
   return (
-    <div>ProductTypeList</div>
-  )
+    <div>
+      <ProductList />
+    </div>
+  );
 }

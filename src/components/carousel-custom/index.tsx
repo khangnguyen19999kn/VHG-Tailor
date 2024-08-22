@@ -1,3 +1,4 @@
+"use client";
 import {
   Carousel,
   CarouselContent,
@@ -7,6 +8,8 @@ import {
 } from "@/components/ui/carousel";
 import Autoplay from "embla-carousel-autoplay";
 import { Image } from "lucide-react";
+import React from "react";
+
 function WrapCarouselItem({ children }: { children: React.ReactNode }) {
   return (
     <div className="bg-green-100 h-[500px] flex justify-center items-center">
@@ -14,15 +17,12 @@ function WrapCarouselItem({ children }: { children: React.ReactNode }) {
     </div>
   );
 }
-export default function CarouselHomePage() {
+export default function CarouselCustom() {
+  const plugin = React.useRef(
+    Autoplay({ delay: 2000, stopOnInteraction: true })
+  );
   return (
-    <Carousel
-      plugins={[
-        Autoplay({
-          delay: 2000,
-        }),
-      ]}
-    >
+    <Carousel plugins={[plugin.current]}>
       <CarouselContent>
         {Array.from({ length: 5 }).map((_, index) => (
           <CarouselItem key={index}>
