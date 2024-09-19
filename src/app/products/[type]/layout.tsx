@@ -20,9 +20,9 @@ export default function ProductTypeListLayout({
         </p>
       </div>
       <div className="w-full h-full flex justify-center items-center my-5">
-        <div className="w-1/2  h-full relative p-2">
+        <div className="w-1/2  h-full relative p-2 mobile:w-full">
           <p className="text-3xl bold font-[playFair] text-center">{`BỘ SƯU TẬP ${type.toUpperCase()}`}</p>
-          <div className="absolute top-0 left-0">
+          <div className="absolute top-0 left-0 mobile:static mobile:flex mobile:justify-center mobile:mt-5">
             <FilterProductPage />
           </div>
           {children}

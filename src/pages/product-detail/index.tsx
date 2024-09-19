@@ -1,9 +1,19 @@
-import Card, { fakeProps } from "@/components/card";
+import Card from "@/components/card";
 import CarouselCustom from "@/components/carousel-custom";
 import { Button } from "@/components/ui/button";
 import CarouselSuggest from "@/pages/product-detail/components/carousel-suggest";
 import Image from "next/image";
-
+export const fakeProps = {
+  title: "Áo vest xanh ghi kẻ",
+  image: {
+    url: "https://theme.hstatic.net/1000333436/1001213866/14/hnc1_img_1_grande.jpg?v=344",
+    public_id: "",
+  },
+  detail:
+    "- Họa tiết kẻ ô Scotland (Glen plaid) xanh ghi mang đến vẻ đẹp vừatrẻ trung, thời thượng;nhưng vẫn vô cùng lịch lãm. - Thiết kế Suitjacket 1 hàng khuy (single breasted) 2 cúc và ve chữ K (Notchlapel), cùng cầu vai được đệm cao giúp tôn lên hình thể của ngườiđàn ông Việt Nam. - Túi áo kiểu túi có nắp (Flap pockets) được maygọn gàng và tinh tế.",
+  price: 2000000,
+  slug: "ao-vest-xanh-ghi",
+};
 const exampleDetailProductHTMLString = `<div style="font-family: Arial, sans-serif; max-width: 600px;"><h1 style="color: #333;">VHG Suit</h1><img src="https://theme.hstatic.net/1000333436/1001213866/14/hnc1_img_1_grande.jpg?v=344" alt="Luxury Men's Suit" style="width: 100%; height: auto; border-radius: 5px;"><p style="color: #555; font-size: 16px;">Elevate your wardrobe with our <strong>Luxury Men's Suit</strong>, designed with the finest materials to offer unparalleled comfort and style. Perfect for any formal occasion, this suit features a classic fit, sleek lapels, and a modern silhouette that complements any physique.</p><ul style="color: #555; font-size: 16px;"><li>Material: 100% Wool</li><li>Color: Navy Blue</li><li>Sizes Available: S, M, L, XL</li></ul><p style="color: #333; font-size: 18px; font-weight: bold;">Price: $499.00</p></div>`;
 export default function ProductDetail() {
   return (

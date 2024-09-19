@@ -10,8 +10,8 @@ import Image from "next/image";
 export default function Footer() {
   return (
     <div className="w-full bg-orange-100 flex justify-center mt-10">
-      <div className="w-1/2 flex justify-between p-2 gap-2 mobile:w-full">
-        <div className="w-2/5 flex justify-center items-center">
+      <div className="w-1/2 flex justify-between p-2 gap-2 mobile:w-full mobile:flex-col mobile:gap-0">
+        <div className="w-2/5 flex justify-center items-center h-32 mobile:w-full">
           <div className="w-full h-full relative">
             <Image src={"/logo.png"} fill alt="logo" />
           </div>

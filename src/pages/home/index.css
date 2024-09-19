@@ -49,6 +49,16 @@
   background-size: cover;
   background-position: center;
 }
+.item1,
+.item2,
+.item3,
+.item4,
+.item5,
+.item6 {
+  @media (min-width: 320px) and (max-width: 639px) {
+    flex-grow: 1;
+  }
+}
 
 .product-type {
   /* background-color: blueviolet; */
@@ -56,4 +66,10 @@
   height: 800px;
   display: grid;
   grid-template-areas: "suit suit shirt trouser blazer" "suit suit vest jacket blazer";
+
+  @media (min-width: 320px) and (max-width: 639px) {
+    display: flex;
+    flex-direction: column;
+    height: 1500px;
+  }
 }
