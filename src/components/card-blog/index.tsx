@@ -19,7 +19,7 @@ export default function CardBlog({
   return (
     <div className={cn("min-w-72", className)}>
       <div className="h-72 bg-red-400 rounded relative block overflow-hidden">
-        <Link href={`/blog/detail/${slug}`}>
+        <Link href={`/blogs/detail/${slug}`}>
           <Image
             fill
             src={coverImage.url}

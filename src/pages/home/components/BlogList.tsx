@@ -31,7 +31,7 @@ export default function BlogList({ dataBlogsNew }: IBlogList) {
       </div>
       <div className="w-full flex justify-center my-5">
         <Button>
-          <Link href="/blog">Xem thêm</Link>
+          <Link href="/blogs">Xem thêm</Link>
         </Button>
       </div>
     </div>

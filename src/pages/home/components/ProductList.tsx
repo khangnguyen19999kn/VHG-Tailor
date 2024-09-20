@@ -18,7 +18,7 @@ export default function ProductList({ dataProductNews }: IProductList) {
   return (
     <div className="w-full">
       <p className="bold text-3xl my-5 text-center">BST Mới</p>
-      <div className="flex flex-wrap gap-5 justify-center">
+      <div className="flex flex-wrap gap-5 justify-center mobile:p-5">
         {Array.isArray(dataProductNews) && dataProductNews.length > 0 ? (
           dataProductNews.map((item) => <Card key={item.id} {...item} />)
         ) : (

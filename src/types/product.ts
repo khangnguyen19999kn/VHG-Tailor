@@ -1,8 +1,7 @@
-
 export interface ImageDto {
-    public_id: string;
-    url: string;
-  }
+  public_id: string;
+  url: string;
+}
 export type TProduct = {
   description: string;
   id: string;
@@ -13,6 +12,17 @@ export type TProduct = {
   price: number;
   sizes: string[];
   slug: string;
-  typeId: string;
+  type: { id: number; name: string };
   viewCount: number;
-}
+};
+export type TResponseProducts = {
+  status: number;
+  message?: string;
+  data: TProduct[];
+};
+
+export type TResponseProductDetail = {
+  status: number;
+  message?: string;
+  data: TProduct;
+};

@@ -27,7 +27,7 @@ export default function Header() {
             </Link>
           </div>
         </div>
-        <div className="flex justify-around items-center w-full mx-auto h-2/5 mobile:w-full tablet:w-2/3 bigDesktop:w-1/4 w-1/3">
+        <div className="flex justify-around items-center mx-auto h-2/5 mobile:w-full tablet:w-2/3 bigDesktop:w-1/4 w-1/3">
           <TooltipProvider>
             <Tooltip>
               <TooltipTrigger>

@@ -11,6 +11,8 @@ export interface IHomePageProps {
   data: TDataHomePage;
 }
 
+
+
 export default async function Home() {
   const dataProductsNew = await getProductsNew();
   const dataBlogsNew = await getBlogsNew();

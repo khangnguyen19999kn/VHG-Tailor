@@ -6,31 +6,30 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel";
+import { ImageDto } from "@/types/product";
 import Autoplay from "embla-carousel-autoplay";
-import { Image } from "lucide-react";
+import Image from "next/image";
 import React from "react";
 
 function WrapCarouselItem({ children }: { children: React.ReactNode }) {
   return (
-    <div className="bg-green-100 h-[500px] flex justify-center items-center">
+    <div className="h-[500px] flex justify-center items-center relative">
       {children}
     </div>
   );
 }
-export default function CarouselCustom() {
+
+export default function CarouselCustom({ images }: { images: ImageDto[] }) {
   const plugin = React.useRef(
     Autoplay({ delay: 2000, stopOnInteraction: true })
   );
   return (
     <Carousel plugins={[plugin.current]}>
       <CarouselContent>
-        {Array.from({ length: 5 }).map((_, index) => (
+        {images.map((image, index) => (
           <CarouselItem key={index}>
             <WrapCarouselItem>
-              <div className="flex gap-2">
-                <p>{index + 1}</p>
-                <Image />
-              </div>
+              <Image src={image.url} alt="image of carousel" fill />
             </WrapCarouselItem>
           </CarouselItem>
         ))}

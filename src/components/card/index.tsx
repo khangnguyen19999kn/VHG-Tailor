@@ -11,7 +11,7 @@ export default function Card({
   slug,
 }: Partial<TProduct>) {
   return (
-    <div className="w-72 h-[400px] rounded-sm relative block overflow-hidden group">
+    <div className="w-72 mobile:w-full h-[400px] rounded-sm relative block overflow-hidden group">
       <Image src={images?.[0]?.url || ""} alt="img-card" fill />
       <div className="absolute z-10 w-full h-full bottom-0 left-0 bg-white bg-opacity-80 text-white p-4 transform translate-y-full opacity-0 transition-all duration-500 group-hover:translate-y-0 group-hover:opacity-100">
         <div className="mt-5 text-black">

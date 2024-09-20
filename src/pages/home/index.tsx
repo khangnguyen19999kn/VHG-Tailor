@@ -10,7 +10,7 @@ export default function HomePage({ data }: IHomePageProps) {
   const { dataProductsNew, dataBlogsNew } = data;
   return (
     <div>
-      <CarouselCustom />
+      {/* <CarouselCustom /> */}
       <div className="mt-2 w-full flex justify-center">
         <div className="bigDesktop:w-1/2 desktop:w-2/3 w-full">
           <ProductTypes />
