@@ -2,7 +2,6 @@ import Card from "@/components/card";
 import { IProductTypeListProps } from "@/pages/product-type-list";
 
 export default function ProductList({ data }: IProductTypeListProps) {
-  console.log(2222, data);
   return (
     <div className="w-full my-10">
       <div className="flex flex-wrap gap-5 justify-center">

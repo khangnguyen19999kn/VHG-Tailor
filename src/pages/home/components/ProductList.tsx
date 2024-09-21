@@ -2,15 +2,7 @@ import Card from "@/components/card";
 import { Button } from "@/components/ui/button";
 import { TProduct } from "@/types/product";
 import Link from "next/link";
-const fakeProps = {
-  title: "Áo vest xanh ghi kẻ",
-  coverImage:
-    "https://theme.hstatic.net/1000333436/1001213866/14/hnc1_img_1_grande.jpg?v=344",
-  detail:
-    "- Họa tiết kẻ ô Scotland (Glen plaid) xanh ghi mang đến vẻ đẹp vừatrẻ trung, thời thượng;nhưng vẫn vô cùng lịch lãm. - Thiết kế Suitjacket 1 hàng khuy (single breasted) 2 cúc và ve chữ K (Notchlapel), cùng cầu vai được đệm cao giúp tôn lên hình thể của ngườiđàn ông Việt Nam. - Túi áo kiểu túi có nắp (Flap pockets) được maygọn gàng và tinh tế.",
-  price: 2000000,
-  slug: "ao-vest-xanh-ghi",
-};
+
 interface IProductList {
   dataProductNews: TProduct[];
 }

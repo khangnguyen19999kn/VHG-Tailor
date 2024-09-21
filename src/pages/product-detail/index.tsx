@@ -18,7 +18,7 @@ export default function ProductDetail({
   ));
   return (
     <div className="w-full h-full min-h-screen flex justify-center my-10 mobile:my-2">
-      <div className="bigDesktop:w-1/2 desktop:w-2/3 w-full p-3 h-full">
+      <div className="bigDesktop:w-1/2 desktop:w-2/3 laptop:w-2/3 w-full p-3 h-full">
         <div className="w-full h-full flex justify-center gap-5 mobile:flex-col">
           <div className="w-2/5 h-full mobile:w-full">
             <CarouselCustom images={data.images} />
@@ -44,11 +44,13 @@ export default function ProductDetail({
               <p>Chất liệu:</p>
               <p>{data.material}</p>
             </div>
-            <div className="flex gap-1">
+            <div className="flex gap-2 items-center">
               <p>Size:</p>
-              <div className="flex gap-1 font-semibold">
+              <div className="flex gap-1 font-semibold items-center">
                 {data.sizes.map((item) => (
-                  <p key={item}>{item}</p>
+                  <div key={item} className="rounded-full text-center w-10 bg-orange-100 p-1">
+                    <p>{item}</p>
+                  </div>
                 ))}
               </div>
             </div>
