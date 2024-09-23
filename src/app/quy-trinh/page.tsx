@@ -6,17 +6,17 @@ export default function ProcedurePage() {
         <p className="text-3xl bold font-[playFair] text-center">
           QUY TRÌNH MAY ĐO TẠI V.H.G TAILOR
         </p>
-        <div className="grid grid-cols-2 gap-8 my-10">
+        <div className="grid grid-cols-2 mobile:grid-cols-1">
           <div className="p-4 flex justify-center items-center">
             <Image
               src={"/tuvan.jpg"}
               width={300}
               height={300}
-              className="w-3/5"
+              className="w-full bigDesktop:w-3/5"
               alt="tuvan"
             />
           </div>
-          <div className="p-4 min-h-96 flex justify-center items-center">
+          <div className="p-4 min-h-96 flex justify-center items-center mobile:items-start mobile:min-h-0">
             <div>
               <p className="text-2xl font-semibold">Bước 1: Tư vấn</p>
               <p>
@@ -27,7 +27,7 @@ export default function ProcedurePage() {
               </p>
             </div>
           </div>
-          <div className="p-4 min-h-96 flex justify-center items-center">
+          <div className="p-4 min-h-96 flex justify-center items-center mobile:items-start mobile:min-h-0">
             <div>
               <p className="text-2xl font-semibold">Bước 2: Lấy số đo</p>
               <p>
@@ -37,25 +37,25 @@ export default function ProcedurePage() {
               </p>
             </div>
           </div>
-          <div className="p-4 min-h-96 flex justify-center items-center relative">
+          <div className="p-4 min-h-96 flex justify-center items-center relative mobile:min-h-0">
             <Image
               src={"/laysodo.jpg"}
               width={300}
               height={300}
-              className="w-3/5"
+              className="w-full bigDesktop:w-3/5"
               alt="laysodo"
             />
           </div>
-          <div className="p-4 min-h-96 flex justify-center items-center">
+          <div className="p-4 min-h-96 flex justify-center items-center mobile:min-h-0">
             <Image
               src={"/taokhuonthu.jpg"}
               width={300}
               height={300}
-              className="w-3/5"
+              className="w-full bigDesktop:w-3/5"
               alt={"taokhuonthu"}
             />
           </div>
-          <div className="p-4 min-h-96 flex justify-center items-center">
+          <div className="p-4 min-h-96 flex justify-center items-center mobile:min-h-0">
             <div>
               <p className="text-2xl font-semibold">
                 Bước 3: Ra rập và tạo khuôn thử
@@ -68,7 +68,7 @@ export default function ProcedurePage() {
               </p>
             </div>
           </div>
-          <div className="p-4 min-h-96 flex justify-center items-center">
+          <div className="p-4 min-h-96 flex justify-center items-center mobile:min-h-0">
             <div>
               <p className="text-2xl font-semibold">Bước 4: Fitting</p>
               <p>
@@ -78,25 +78,24 @@ export default function ProcedurePage() {
               </p>
             </div>
           </div>
-          <div className="p-4 min-h-96 flex justify-center items-center">
+          <div className="p-4 min-h-96 flex justify-center items-center mobile:min-h-0">
             <Image
               src={"/fitting.jpg"}
               width={300}
               height={300}
-              className="w-3/5"
               alt={"taokhuonthu"}
             />
           </div>
-          <div className="p-4 min-h-96 flex justify-center items-center">
+          <div className="p-4 min-h-96 flex justify-center items-center mobile:min-h-0">
             <Image
               src={"/hoanthien.jpg"}
               width={300}
               height={300}
-              className="w-3/5"
+              className="w-full bigDesktop:w-3/5"
               alt={"taokhuonthu"}
             />
           </div>
-          <div className="p-4 min-h-96 flex justify-center items-center">
+          <div className="p-4 min-h-96 flex justify-center items-center mobile:min-h-0">
             <div>
               <p className="text-2xl font-semibold">Bước 5: Hoàn thiện</p>
               <p>

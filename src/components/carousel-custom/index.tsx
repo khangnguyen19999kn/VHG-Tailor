@@ -13,7 +13,7 @@ import React from "react";
 
 function WrapCarouselItem({ children }: { children: React.ReactNode }) {
   return (
-    <div className="h-[500px] flex justify-center items-center relative">
+    <div className="h-[500px] desktop:h-[550px] mobile:h-[400px] flex justify-center items-center relative">
       {children}
     </div>
   );
