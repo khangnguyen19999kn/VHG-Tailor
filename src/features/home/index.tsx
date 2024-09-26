@@ -1,9 +1,9 @@
 import { IHomePageProps } from "@/app/page";
 import CarouselCustom from "@/components/carousel-custom";
 import Divider from "@/components/divider";
-import BlogList from "@/pages/home/components/BlogList";
-import ProductList from "@/pages/home/components/ProductList";
-import ProductTypes from "@/pages/home/components/ProductTypes";
+import BlogList from "@/features/home/components/BlogList";
+import ProductList from "@/features/home/components/ProductList";
+import ProductTypes from "@/features/home/components/ProductTypes";
 import "../home/index.css";
 
 export default function HomePage({ data }: IHomePageProps) {

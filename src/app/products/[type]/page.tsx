@@ -1,6 +1,6 @@
 import { getProductsWithType } from "@/api/products";
-import ProductList from "@/pages/home/components/ProductList";
-import { TProduct, TResponseAllTypeProduct } from "@/types/product";
+import ProductList from "@/features/home/components/ProductList";
+import { TProduct } from "@/types/product";
 
 // export async function generateStaticParams() {
 //   let posts: TResponseAllTypeProduct = await fetch(

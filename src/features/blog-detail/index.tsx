@@ -1,7 +1,6 @@
 import CardBlog from "@/components/card-blog";
 import { Separator } from "@/components/ui/separator";
-import { fakeBlogProps } from "@/pages/home/components/BlogList";
-import CarouselSuggest from "@/pages/product-detail/components/carousel-suggest";
+import CarouselSuggest from "@/features/product-detail/components/carousel-suggest";
 import { TBlogs } from "@/types/blogs";
 import { CalendarDays, User } from "lucide-react";
 interface IBlogDetailProps {

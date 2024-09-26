@@ -1,4 +1,4 @@
-import ProductList from "@/pages/product-type-list/components/ProductList";
+import ProductList from "@/features/product-type-list/components/ProductList";
 import { TProduct } from "@/types/product";
 
 export interface IProductTypeListProps {

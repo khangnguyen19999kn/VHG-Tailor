@@ -1,7 +1,7 @@
 import Card from "@/components/card";
 import CarouselCustom from "@/components/carousel-custom";
 import { Button } from "@/components/ui/button";
-import CarouselSuggest from "@/pages/product-detail/components/carousel-suggest";
+import CarouselSuggest from "@/features/product-detail/components/carousel-suggest";
 import { TProduct } from "@/types/product";
 import Image from "next/image";
 interface IProductDetailProps {
@@ -48,7 +48,10 @@ export default function ProductDetail({
               <p>Size:</p>
               <div className="flex gap-1 font-semibold items-center">
                 {data.sizes.map((item) => (
-                  <div key={item} className="rounded-full text-center w-10 bg-orange-100 p-1">
+                  <div
+                    key={item}
+                    className="rounded-full text-center w-10 bg-orange-100 p-1"
+                  >
                     <p>{item}</p>
                   </div>
                 ))}

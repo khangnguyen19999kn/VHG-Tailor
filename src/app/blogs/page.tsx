@@ -1,6 +1,5 @@
 import { getBlogs } from "@/api/blogs";
 import CardBlog from "@/components/card-blog";
-import { fakeBlogProps } from "@/pages/home/components/BlogList";
 import { TBlogsResponse } from "@/types/blogs";
 
 export default async function PageListBlog() {

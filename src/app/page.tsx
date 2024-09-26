@@ -1,7 +1,7 @@
 import { getBlogsNew } from "@/api/blogs";
 import { getHeroSection } from "@/api/hero-section";
 import { getProductsNew } from "@/api/products";
-import HomePage from "@/pages/home";
+import HomePage from "@/features/home";
 import { TBlogs } from "@/types/blogs";
 import { TResponseHeroSection } from "@/types/heroSection";
 import { ImageDto, TProduct } from "@/types/product";

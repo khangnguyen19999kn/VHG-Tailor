@@ -1,7 +1,7 @@
 "use client";
 
+import FilterProductPage from "@/features/product-type-list/components/FilterProductPage";
 import useScrollToTop from "@/hooks/useScrolltoTop";
-import FilterProductPage from "@/pages/product-type-list/components/FilterProductPage";
 import { useParams } from "next/navigation";
 import { Suspense } from "react";
 

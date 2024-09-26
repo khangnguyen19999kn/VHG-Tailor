@@ -1,5 +1,5 @@
 import Card from "@/components/card";
-import { IProductTypeListProps } from "@/pages/product-type-list";
+import { IProductTypeListProps } from "@/features/product-type-list";
 
 export default function ProductList({ data }: IProductTypeListProps) {
   return (

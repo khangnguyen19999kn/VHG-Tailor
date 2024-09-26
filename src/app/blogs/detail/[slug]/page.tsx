@@ -1,5 +1,5 @@
 import { getBlogDetail, getBlogsNew } from "@/api/blogs";
-import BlogDetail from "@/pages/blog-detail";
+import BlogDetail from "@/features/blog-detail";
 import { TBlogResponse, TBlogsResponse } from "@/types/blogs";
 
 // export async function generateStaticParams() {

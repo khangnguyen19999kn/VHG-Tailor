@@ -1,5 +1,5 @@
 import { getProductDetail, getProductsWithType } from "@/api/products";
-import ProductDetail from "@/pages/product-detail";
+import ProductDetail from "@/features/product-detail";
 import { TResponseProductDetail, TResponseProducts } from "@/types/product";
 
 // export async function generateStaticParams() {

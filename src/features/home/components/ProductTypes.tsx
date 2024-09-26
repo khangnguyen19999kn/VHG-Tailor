@@ -1,12 +1,9 @@
 import { Button } from "@/components/ui/button";
-import "@/pages/home/index.css";
+import "@/features/home/index.css";
 import Link from "next/link";
-import { useEffect, useRef, useState } from "react";
 export default function ProductTypes() {
   return (
-    <div
-      className="product-type mobile:flex mobile:flex-col mt-5 p-5 gap-3 mobile:p-0"
-    >
+    <div className="product-type mobile:flex mobile:flex-col mt-5 p-5 gap-3 mobile:p-0">
       <div className="item1 relative hover:-translate-y-1">
         <p className="absolute top-3 left-5 bold text-white text-3xl">SUIT</p>
         <div className="w-full h-full top-0 left-0 bg-black opacity-0 hover:opacity-50 transition-opacity flex justify-center items-center">
