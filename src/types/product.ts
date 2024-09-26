@@ -26,3 +26,8 @@ export type TResponseProductDetail = {
   message?: string;
   data: TProduct;
 };
+export type TResponseAllTypeProduct = {
+  status: number;
+  message?: string;
+  data: string[];
+};

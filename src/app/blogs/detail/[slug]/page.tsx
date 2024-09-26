@@ -2,14 +2,14 @@ import { getBlogDetail, getBlogsNew } from "@/api/blogs";
 import BlogDetail from "@/pages/blog-detail";
 import { TBlogResponse, TBlogsResponse } from "@/types/blogs";
 
-export async function generateStaticParams() {
-  let posts: TBlogsResponse = await fetch(
-    "https://vhg.vovantrong.xyz/blogs"
-  ).then((res) => res.json());
-  return posts.data.map((post) => ({
-    slug: post.slug,
-  }));
-}
+// export async function generateStaticParams() {
+//   let posts: TBlogsResponse = await fetch(
+//     "https://api.vhgtailorhouse.vn/blogs"
+//   ).then((res) => res.json());
+//   return posts.data.map((post) => ({
+//     slug: post.slug,
+//   }));
+// }
 export default async function PageBlogDetail({
   params,
 }: {
@@ -17,5 +17,10 @@ export default async function PageBlogDetail({
 }) {
   const dataBlogsNew: TBlogsResponse = await getBlogsNew(6);
   const dataBlogDetail: TBlogResponse = await getBlogDetail(params.slug);
-  return <BlogDetail blogData={dataBlogDetail.data} blogDataSuggest={dataBlogsNew.data}/>;
+  return (
+    <BlogDetail
+      blogData={dataBlogDetail.data}
+      blogDataSuggest={dataBlogsNew.data}
+    />
+  );
 }
