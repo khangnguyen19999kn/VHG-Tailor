@@ -9,7 +9,7 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"] });
 export const metadata: Metadata = {
   title: "VHG Tailor",
-  keywords: "VHG Tailor, VHG, Tailor, VHG, VHG, Tailor, VHG, Tailor",
+  keywords: "VHG Tailor, VHG, Tailor, VHG, VHG, Tailor, VHG, Tailor, vest, suit",
   robots: "index, follow",
   icons: {
     icon: Logo.src,
