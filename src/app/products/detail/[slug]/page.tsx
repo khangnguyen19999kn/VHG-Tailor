@@ -1,16 +1,6 @@
 import { getProductDetail, getProductsWithType } from "@/api/products";
 import ProductDetail from "@/features/product-detail";
 import { TResponseProductDetail, TResponseProducts } from "@/types/product";
-
-// export async function generateStaticParams() {
-//   let posts: TResponseProducts = await fetch(
-//     "https://api.vhgtailorhouse.vn/products"
-//   ).then((res) => res.json());
-
-//   return posts.data.map((post) => ({
-//     slug: post.slug,
-//   }));
-// }
 export default async function PageProductDetail({
   params,
 }: {

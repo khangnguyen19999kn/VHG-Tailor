@@ -33,7 +33,7 @@ export default function Footer() {
                   </div>
                   <div className="flex items-center gap-2">
                     <Sparkle />
-                    CN2: 145/22 Thống Nhất, TP Pleiku, tỉnh Gia Lai
+                    Comming Soon
                   </div>
                 </div>
               </AccordionContent>
@@ -48,7 +48,7 @@ export default function Footer() {
               <AccordionContent>
                 <div className="flex items-center gap-2">
                   <Sparkle />
-                  <p>0912345678</p>
+                  <p>0269 6276 777</p>
                 </div>
               </AccordionContent>
             </AccordionItem>
@@ -58,7 +58,7 @@ export default function Footer() {
           </p>
           <div className="flex gap-2 justify-center">
             <div className="relative w-10 h-10">
-              <Image src={"/social_facebook.webp"} fill alt="logo" />
+              <a href="https://www.facebook.com/hugoshop.pk/?locale=vi_VN" target="_blank"><Image src={"/social_facebook.webp"} fill alt="logo" /></a>
             </div>
             <div className="relative w-10 h-10">
               <Image src={"/social_instagram.webp"} fill alt="logo" />

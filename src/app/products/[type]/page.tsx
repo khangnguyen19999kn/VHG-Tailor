@@ -1,15 +1,7 @@
 import { getProductsWithType } from "@/api/products";
-import ProductList from "@/features/home/components/ProductList";
+import ProductList from "@/features/product-type-list/components/ProductList";
 import { TProduct } from "@/types/product";
 
-// export async function generateStaticParams() {
-//   let posts: TResponseAllTypeProduct = await fetch(
-//     "https://api.vhgtailorhouse.vn/products/type"
-//   ).then((res) => res.json());
-//   return posts.data.map((post) => ({
-//     type: post,
-//   }));
-// }
 export default async function PageProductType({
   params,
 }: {
@@ -19,5 +11,5 @@ export default async function PageProductType({
   const productsWithType = await getProductsWithType(type);
   const dataProducts: TProduct[] = productsWithType.data || [];
 
-  return <ProductList dataProductNews={dataProducts} />;
+  return <ProductList data={dataProducts} />;
 }

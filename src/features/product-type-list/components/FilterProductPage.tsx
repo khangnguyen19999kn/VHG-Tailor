@@ -15,6 +15,7 @@ import {
 import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useParams, useRouter, useSearchParams } from "next/navigation";
+import { useState } from "react";
 
 import { FormProvider, useForm } from "react-hook-form";
 import { z } from "zod";
@@ -26,10 +27,13 @@ const FormSchema = z.object({
 type TFormData = z.infer<typeof FormSchema>;
 export default function FilterProductPage() {
   const router = useRouter();
-  const searchParams = useSearchParams();
+  const [openFilter, setOpenFilter] = useState(false);
   const params = useParams();
   const { type } = (params as { type: string }) || {};
-  const priceRange = searchParams ? searchParams.get("priceRange") : "all";
+  const searchParams = useSearchParams();
+  const priceRange = searchParams.get("priceRange")
+    ? searchParams.get("priceRange")
+    : "all";
   const form = useForm<TFormData>({
     resolver: zodResolver(FormSchema),
     defaultValues: {
@@ -40,8 +44,8 @@ export default function FilterProductPage() {
     router.replace(`${type}?priceRange=${data.priceRange}`);
   };
   return (
-    <DropdownMenu>
-      <DropdownMenuTrigger>
+    <DropdownMenu open={openFilter} modal>
+      <DropdownMenuTrigger onClick={() => setOpenFilter(!openFilter)}>
         <Button>Bộ lọc</Button>
       </DropdownMenuTrigger>
       <DropdownMenuContent>
@@ -97,7 +101,12 @@ export default function FilterProductPage() {
                 )}
               />
               <div className="flex justify-end">
-                <Button type="submit">Lọc</Button>
+                <Button
+                  type="submit"
+                  onClick={() => setOpenFilter(!openFilter)}
+                >
+                  Lọc
+                </Button>
               </div>
             </form>
           </FormProvider>
