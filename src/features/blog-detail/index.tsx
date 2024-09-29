@@ -41,7 +41,7 @@ export default function BlogDetail({
           dangerouslySetInnerHTML={{ __html: blogData.content }}
         />
         <div className="w-full my-5">
-          <p className="text-2xl bold text-center">Những bài viết liên quan</p>
+          <p className="text-2xl font-bold text-center">Những bài viết liên quan</p>
           <div className="w-full my-5">
             <CarouselSuggest items={blogsSuggest} />
           </div>

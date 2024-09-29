@@ -13,7 +13,7 @@ import React from "react";
 
 function WrapCarouselItem({ children }: { children: React.ReactNode }) {
   return (
-    <div className="h-[500px] desktop:h-[550px] mobile:h-[400px] flex justify-center items-center relative">
+    <div className="h-[800px] desktop:h-[600px] mobile:h-[450px] flex justify-center items-center relative">
       {children}
     </div>
   );
@@ -29,7 +29,7 @@ export default function CarouselCustom({ images }: { images: ImageDto[] }) {
         {images.map((image, index) => (
           <CarouselItem key={index}>
             <WrapCarouselItem>
-              <Image src={image.url} alt="image of carousel" fill />
+              <Image src={image.url} alt="image of carousel" fill className="object-cover"/>
             </WrapCarouselItem>
           </CarouselItem>
         ))}

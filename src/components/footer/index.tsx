@@ -20,7 +20,7 @@ export default function Footer() {
           <Accordion type="single" collapsible>
             <AccordionItem value="item-1">
               <AccordionTrigger>
-                <div className="flex gap-2">
+                <div className="flex gap-2 font-semibold">
                   <Store />
                   <p>Hệ thống cửa hàng</p>
                 </div>
@@ -40,7 +40,7 @@ export default function Footer() {
             </AccordionItem>
             <AccordionItem value="item-2">
               <AccordionTrigger>
-                <div className="flex gap-2">
+                <div className="flex gap-2 font-semibold">
                   <Phone />
                   <p>Hotline</p>
                 </div>
@@ -53,21 +53,32 @@ export default function Footer() {
               </AccordionContent>
             </AccordionItem>
           </Accordion>
-          <p className="bold text-center my-2">
+          <p className="font-semibold text-center my-2">
             THEO DÕI CHÚNG TÔI TRÊN MẠNG XÃ HỘI
           </p>
           <div className="flex gap-2 justify-center">
             <div className="relative w-10 h-10">
-              <a href="https://www.facebook.com/hugoshop.pk/?locale=vi_VN" target="_blank"><Image src={"/social_facebook.webp"} fill alt="logo" /></a>
+              <a
+                href="https://www.facebook.com/hugoshop.pk/?locale=vi_VN"
+                target="_blank"
+              >
+                <Image src={"/social_facebook.webp"} fill alt="logo" />
+              </a>
             </div>
             <div className="relative w-10 h-10">
-              <Image src={"/social_instagram.webp"} fill alt="logo" />
+              <a href="https://www.instagram.com/v.h.g_tailor/" target="_blank">
+                <Image src={"/social_instagram.webp"} fill alt="logo" />
+              </a>
             </div>
             <div className="relative w-10 h-10">
-              <Image src={"/social_youtube.webp"} fill alt="logo" />
+              <a href="https://www.youtube.com/@VHGTAILOR" target="_blank">
+                <Image src={"/social_youtube.webp"} fill alt="logo" />
+              </a>
             </div>
             <div className="relative w-10 h-10">
-              <Image src={"/social_zalo.webp"} fill alt="logo" />
+              <a href="https://zalo.me/0911114522" target="_blank">
+                <Image src={"/social_zalo.webp"} fill alt="logo" />
+              </a>
             </div>
           </div>
         </div>

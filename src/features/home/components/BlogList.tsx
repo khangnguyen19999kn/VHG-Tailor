@@ -17,7 +17,7 @@ interface IBlogList {
 export default function BlogList({ dataBlogsNew }: IBlogList) {
   return (
     <div className="w-full">
-      <p className="bold text-3xl my-10 text-center">Bài viết</p>
+      <p className="font-bold text-3xl my-10 text-center">ART WORK</p>
       <div className="flex flex-wrap gap-5 justify-center">
         {Array.isArray(dataBlogsNew) && dataBlogsNew.length > 0 ? (
           dataBlogsNew.map((item) => <CardBlog key={item.slug} {...item} />)

@@ -25,7 +25,7 @@ export default function Header() {
           </div>
         </div>
         <div className="flex justify-around items-center mx-auto h-2/5 mobile:w-full tablet:w-2/3 bigDesktop:w-1/4 w-1/3">
-          <Link href="/gioi-thieu" className="bold relative group">
+          <Link href="/gioi-thieu" className="font-bold relative group">
             <span>Giới thiệu</span>
             <div className="absolute left-0 -bottom-1 w-0 h-0.5 bg-black transition-all duration-300 group-hover:w-full"></div>
           </Link>
@@ -33,7 +33,7 @@ export default function Header() {
 
           <DropdownMenu open={openDropDown}>
             <DropdownMenuTrigger onClick={() => setOpenDropDown(!openDropDown)}>
-              <p className="bold relative group">
+              <p className="font-bold relative group">
                 Sản phẩm
                 <div className="absolute left-0 -bottom-1 w-0 h-0.5 bg-black transition-all duration-300 group-hover:w-full"></div>
               </p>
@@ -64,13 +64,13 @@ export default function Header() {
             </DropdownMenuContent>
           </DropdownMenu>
           <Separator orientation="vertical" className="bg-slate-400 h-1/3" />
-          <Link href="/quy-trinh" className="bold relative group">
+          <Link href="/quy-trinh" className="font-bold relative group">
             Quy trình may
             <div className="absolute left-0 -bottom-1 w-0 h-0.5 bg-black transition-all duration-300 group-hover:w-full"></div>
           </Link>
           <Separator orientation="vertical" className="bg-slate-400 h-1/3" />
-          <Link href="/blogs" className="bold relative group">
-            Blogs
+          <Link href="/blogs" className="font-bold relative group">
+            Art Work
             <div className="absolute left-0 -bottom-1 w-0 h-0.5 bg-black transition-all duration-300 group-hover:w-full"></div>
           </Link>
         </div>

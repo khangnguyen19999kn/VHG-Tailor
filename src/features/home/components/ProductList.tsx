@@ -23,12 +23,12 @@ export default function ProductList({
 
   return (
     <div className="w-full">
-      {isSeeMore && <p className="bold text-3xl my-5 text-center">BST Mới</p>}
+      {isSeeMore && <p className="font-bold text-3xl my-5 text-center">BST Mới</p>}
       <div className="flex flex-wrap gap-5 justify-center mobile:p-5">
         {Array.isArray(dataProductNews) && dataProductNews.length > 0 ? (
           dataProductNews.map((item) => <Card key={item.id} {...item} />)
         ) : (
-          <p className="text-center text-2xl font-semibold my-5">
+          <p className="text-center text-2xl font-bold my-5">
             Không có sản phẩm
           </p>
         )}
