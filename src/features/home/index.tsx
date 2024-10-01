@@ -1,8 +1,7 @@
 import { IHomePageProps } from "@/app/page";
 import CarouselCustom from "@/components/carousel-custom";
 import Divider from "@/components/divider";
-import BlogList from "@/features/home/components/BlogList";
-import ProductList from "@/features/home/components/ProductList";
+import LongImage from "@/features/home/components/LongImage";
 import ProductTypes from "@/features/home/components/ProductTypes";
 import "../home/index.css";
 
@@ -19,9 +18,10 @@ export default function HomePage({ data }: IHomePageProps) {
         <div className="bigDesktop:w-1/2 desktop:w-2/3 w-full">
           <ProductTypes />
           <Divider />
-          <ProductList dataProductNews={dataProductsNew} />
+          <LongImage />
+          {/* <ProductList dataProductNews={dataProductsNew} />
           <Divider />
-          <BlogList dataBlogsNew={dataBlogsNew} />
+          <BlogList dataBlogsNew={dataBlogsNew} /> */}
         </div>
       </div>
     </div>

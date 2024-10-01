@@ -3,7 +3,7 @@ import Header from "@/components/header";
 import { cn } from "@/lib/utils";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
-import Logo from "../../public/logo.png";
+// import Logo from "../../public/logo.png";
 import "./globals.css";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -12,7 +12,7 @@ export const metadata: Metadata = {
   keywords: "VHG Tailor, VHG, Tailor, VHG, VHG, Tailor, VHG, Tailor, vest, suit",
   robots: "index, follow",
   icons: {
-    icon: Logo.src,
+    icon: '/logo-icon.ico',
   },
 };
 
