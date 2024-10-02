@@ -9,6 +9,7 @@ export default function HomePage({ data }: IHomePageProps) {
   const { dataProductsNew, dataBlogsNew, dataHeroSection } = data;
   return (
     <div>
+      <h1 className="hidden">VHG Tailor</h1>
       <div className="w-full flex justify-center items-center">
         <div className="w-full bigDesktop:w-1/2 desktop:w-2/3 ">
           <CarouselCustom images={dataHeroSection} />

@@ -39,7 +39,7 @@ export default function LetterPullup({
           custom={i}
           viewport={{ once: true, amount: 0.5 }}
           className={cn(
-            "font-display text-center text-4xl mobile:text-lg font-bold tracking-[-0.02em] text-black drop-shadow-sm dark:text-white md:text-2xl md:leading-[5rem]",
+            "font-display text-center text-4xl mobile:text-lg font-bold tracking-[-0.02em] text-black drop-shadow-sm dark:text-white tablet:text-2xl md:leading-[5rem]",
             className,
           )}
         >
