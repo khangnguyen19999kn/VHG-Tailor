@@ -26,7 +26,7 @@ export default function LongImage() {
   return (
     <div className="flex flex-col gap-5">
       <div className="flex long-image mobile:flex-col">
-        <div className="w-1/4 h-[500px] relative img-item mobile:w-full">
+        <div className="w-1/4 h-[500px] tablet:h-96 relative img-item mobile:w-full">
           <Image
             src="/long-image-2.png"
             alt="long-image"
@@ -37,7 +37,7 @@ export default function LongImage() {
           <div className="bg-black opacity-50 absolute top-0 left-0 w-full h-full cursor-pointer hover:opacity-30 transition-all" />
         </div>
 
-        <div className="w-1/4 h-[500px] relative img-item mobile:w-full">
+        <div className="w-1/4 h-[500px] tablet:h-96 relative img-item mobile:w-full">
           <Image
             src="/long-image-3.png"
             alt="long-image"
@@ -48,7 +48,7 @@ export default function LongImage() {
           <div className="bg-black opacity-50 absolute top-0 left-0 w-full h-full cursor-pointer hover:opacity-30 transition-all" />
         </div>
 
-        <div className="w-1/4 h-[500px] relative img-item mobile:w-full">
+        <div className="w-1/4 h-[500px] tablet:h-96 relative img-item mobile:w-full">
           <Image
             src="/long-image-4.png"
             alt="long-image"
@@ -58,7 +58,7 @@ export default function LongImage() {
           />
           <div className="bg-black opacity-50 absolute top-0 left-0 w-full h-full cursor-pointer hover:opacity-30 transition-all" />
         </div>
-        <div className="w-1/4 h-[500px] relative img-item mobile:w-full">
+        <div className="w-1/4 h-[500px] tablet:h-96 relative img-item mobile:w-full">
           <Image
             src="/long-image-1.png"
             alt="long-image"
