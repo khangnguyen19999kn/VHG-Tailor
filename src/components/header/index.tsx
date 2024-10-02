@@ -10,10 +10,13 @@ import {
 import { Separator } from "@/components/ui/separator";
 import Image from "next/image";
 import Link from "next/link";
-import { useState } from "react";
+import { useRouter } from "next/navigation";
 
 export default function Header() {
-  const [openDropDown, setOpenDropDown] = useState(false);
+  const router = useRouter();
+  const handleClickItemDropdown = (url: string) => {
+    router.push(url);
+  };
   return (
     <div className="w-full bg-header h-28 sticky top-0 flex justify-center z-50">
       <div className="w-full h-full">
@@ -31,38 +34,54 @@ export default function Header() {
           </Link>
           <Separator orientation="vertical" className="bg-slate-400 h-1/3" />
 
-          <DropdownMenu open={openDropDown}>
-            <DropdownMenuTrigger onClick={() => setOpenDropDown(!openDropDown)}>
+          <DropdownMenu>
+            <DropdownMenuTrigger>
               <p className="font-bold relative group">
                 Sản phẩm
                 <div className="absolute left-0 -bottom-1 w-0 h-0.5 bg-black transition-all duration-300 group-hover:w-full"></div>
               </p>
             </DropdownMenuTrigger>
             <DropdownMenuContent>
-              <DropdownMenuItem onClick={() => setOpenDropDown(false)}>
-                <Link href={"/products/all"}>Tất cả sản phẩm</Link>
+              <DropdownMenuItem
+                onClick={() => handleClickItemDropdown("/products/all")}
+              >
+                <p>Tất cả sản phẩm</p>
               </DropdownMenuItem>
               <DropdownMenuSeparator />
-              <DropdownMenuItem onClick={() => setOpenDropDown(false)}>
-                <Link href={"/products/suit"}>Suit</Link>
+              <DropdownMenuItem
+                onClick={() => handleClickItemDropdown("/products/suit")}
+              >
+                <p>Suit</p>
               </DropdownMenuItem>
-              <DropdownMenuItem onClick={() => setOpenDropDown(false)}>
-                <Link href={"/products/jacket"}>Jacket</Link>
+              <DropdownMenuItem
+                onClick={() => handleClickItemDropdown("/products/jacket")}
+              >
+                <p>Jacket</p>
               </DropdownMenuItem>
-              <DropdownMenuItem onClick={() => setOpenDropDown(false)}>
-                <Link href={"/products/shirt"}>Shirt</Link>
+              <DropdownMenuItem
+                onClick={() => handleClickItemDropdown("/products/shirt")}
+              >
+                <p>Shirt</p>
               </DropdownMenuItem>
-              <DropdownMenuItem onClick={() => setOpenDropDown(false)}>
-                <Link href={"/products/blazer"}>Blazer</Link>
+              <DropdownMenuItem
+                onClick={() => handleClickItemDropdown("/products/blazer")}
+              >
+                <p>Blazer</p>
               </DropdownMenuItem>
-              <DropdownMenuItem onClick={() => setOpenDropDown(false)}>
-                <Link href={"/products/vest"}>Vest</Link>
+              <DropdownMenuItem
+                onClick={() => handleClickItemDropdown("/products/vest")}
+              >
+                <p>Vest</p>
               </DropdownMenuItem>
-              <DropdownMenuItem onClick={() => setOpenDropDown(false)}>
-                <Link href={"/products/trouser"}>Trouser</Link>
+              <DropdownMenuItem
+                onClick={() => handleClickItemDropdown("/products/trouser")}
+              >
+                <p>Trouser</p>
               </DropdownMenuItem>
-              <DropdownMenuItem onClick={() => setOpenDropDown(false)}>
-                <Link href={"/products/accessories"}>Accessories</Link>
+              <DropdownMenuItem
+                onClick={() => handleClickItemDropdown("/products/accessories")}
+              >
+                <p>Accessories</p>
               </DropdownMenuItem>
             </DropdownMenuContent>
           </DropdownMenu>
