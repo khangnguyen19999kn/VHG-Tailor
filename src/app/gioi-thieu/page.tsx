@@ -26,7 +26,12 @@ export default function IntroductionPage() {
         />
         <div className="w-full flex justify-center">
           <div className="w-4/5 h-[650px] relative mobile:w-full mobile:h-[300px]">
-            <BoxReveal boxColor={"#edd8c2"} width="100%" height="100%" duration={0.5}>
+            <BoxReveal
+              boxColor={"#edd8c2"}
+              width="100%"
+              height="100%"
+              duration={0.5}
+            >
               <Image src={"/herosection2.jpg"} alt="herosection2" fill />
             </BoxReveal>
           </div>
