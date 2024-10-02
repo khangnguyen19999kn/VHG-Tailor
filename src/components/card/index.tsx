@@ -5,7 +5,7 @@ import Link from "next/link";
 
 export default function Card({
   name,
-  description,
+  shortDescription,
   price,
   images,
   slug,
@@ -17,7 +17,7 @@ export default function Card({
         <div className="mt-5 text-black">
           <p className="text-xl bold text-center">{name}</p>
           <p className="text-base mt-1 bold">Chi tiết sản phẩm:</p>
-          <p className="text-base line-clamp-6">{description}</p>
+          <p className="text-base line-clamp-6">{shortDescription}</p>
           <div className="w-full rounded-xl mt-5 border-gray-900 border hover:bg-slate-200 hover:border-transparent  transition-all">
             <p className="text-lg bold text-center p-3">{`Giá bán: ${
               price?.toLocaleString() || 0

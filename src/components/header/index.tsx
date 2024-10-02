@@ -61,6 +61,9 @@ export default function Header() {
               <DropdownMenuItem onClick={() => setOpenDropDown(false)}>
                 <Link href={"/products/trouser"}>Trouser</Link>
               </DropdownMenuItem>
+              <DropdownMenuItem onClick={() => setOpenDropDown(false)}>
+                <Link href={"/products/accessories"}>Accessories</Link>
+              </DropdownMenuItem>
             </DropdownMenuContent>
           </DropdownMenu>
           <Separator orientation="vertical" className="bg-slate-400 h-1/3" />

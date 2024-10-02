@@ -4,6 +4,7 @@ export interface ImageDto {
 }
 export type TProduct = {
   description: string;
+  shortDescription: string;
   id: string;
   images: ImageDto[];
   link: string;

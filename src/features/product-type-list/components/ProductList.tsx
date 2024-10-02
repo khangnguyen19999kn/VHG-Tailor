@@ -16,6 +16,11 @@ export default function ProductList({ data }: IProductTypeListProps) {
         {dataProduct.map((item, index) => (
           <Card key={index} {...item} />
         ))}
+        {dataProduct.length === 0 && (
+          <p className="text-center text-2xl font-bold my-5">
+            Không có sản phẩm thuộc loại này
+          </p>
+        )}
       </div>
     </div>
   );
