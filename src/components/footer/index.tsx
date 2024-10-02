@@ -29,11 +29,11 @@ export default function Footer() {
                 <div className="flex flex-col gap-2">
                   <div className="flex items-center gap-2">
                     <Sparkle />
-                    CN1: 145/22 Thống Nhất, TP Pleiku, tỉnh Gia Lai
+                    <h1>CN1: 145/22 Thống Nhất, TP Pleiku, tỉnh Gia Lai</h1>
                   </div>
                   <div className="flex items-center gap-2">
                     <Sparkle />
-                    Comming Soon
+                    <h1>CN2: 11A Nguyễn Hiền, phường 4, Quận 3, TP HCM</h1>
                   </div>
                 </div>
               </AccordionContent>
@@ -48,7 +48,7 @@ export default function Footer() {
               <AccordionContent>
                 <div className="flex items-center gap-2">
                   <Sparkle />
-                  <p>0269 6276 777</p>
+                  <p>0269 6276 777 - 09 1111 4522 </p>
                 </div>
               </AccordionContent>
             </AccordionItem>
