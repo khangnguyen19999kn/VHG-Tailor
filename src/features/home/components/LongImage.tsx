@@ -7,6 +7,7 @@ import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 import Image from "next/image";
 import Link from "next/link";
 gsap.registerPlugin(useGSAP, ScrollTrigger);
+
 export default function LongImage() {
   useGSAP(() => {
     gsap.from(".img-item", {

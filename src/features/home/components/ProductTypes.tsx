@@ -1,10 +1,27 @@
+"use client";
 import { Button } from "@/components/ui/button";
 import "@/features/home/index.css";
+import { useGSAP } from "@gsap/react";
 import Link from "next/link";
+import gsap from "gsap";
+gsap.registerPlugin(useGSAP);
 export default function ProductTypes() {
+  useGSAP(() => {
+    gsap.from(".item", {
+      opacity: 0,
+      duration: 1,
+      stagger: 0.5,
+      ease: "power3.out",
+      scrollTrigger: {
+        trigger: ".product-type",
+        start: "top 80%",
+        toggleActions: "play none none none",
+      },
+    });
+  }, []);
   return (
     <div className="product-type mobile:flex mobile:flex-col mt-5 p-5 gap-3 mobile:p-0">
-      <div className="item1 relative hover:-translate-y-1">
+      <div className="item1 relative hover:-translate-y-1 item">
         <p className="absolute top-3 left-5 bold text-white text-3xl">SUIT</p>
         <div className="w-full h-full top-0 left-0 bg-black opacity-0 hover:opacity-50 transition-opacity flex justify-center items-center">
           <Link href={"/products/suit"}>
@@ -12,7 +29,7 @@ export default function ProductTypes() {
           </Link>
         </div>
       </div>
-      <div className="item2 relative hover:-translate-y-1">
+      <div className="item2 relative hover:-translate-y-1 item">
         <p className="absolute top-1 left-2 bold text-white text-lg">SHIRT</p>
         <div className="w-full h-full top-0 left-0 bg-black opacity-0 hover:opacity-50 transition-opacity flex justify-center items-center">
           <Link href={"/products/shirt"}>
@@ -20,7 +37,7 @@ export default function ProductTypes() {
           </Link>
         </div>
       </div>
-      <div className="item3 relative hover:-translate-y-1">
+      <div className="item3 relative hover:-translate-y-1 item">
         <p className="absolute bottom-1 left-2 bold text-white text-lg">
           TROUSER
         </p>
@@ -30,7 +47,7 @@ export default function ProductTypes() {
           </Link>
         </div>
       </div>
-      <div className="item4 relative hover:-translate-y-1">
+      <div className="item4 relative hover:-translate-y-1 item">
         <p className="absolute top-1 left-2 bold text-white text-lg">VEST</p>
         <div className="w-full h-full top-0 left-0 bg-black opacity-0 hover:opacity-50 transition-opacity flex justify-center items-center">
           <Link href={"/products/vest"}>
@@ -38,7 +55,7 @@ export default function ProductTypes() {
           </Link>
         </div>
       </div>
-      <div className="item5 relative hover:-translate-y-1">
+      <div className="item5 relative hover:-translate-y-1 item">
         <p className="absolute bottom-5 left-2 bold text-white text-lg">
           JACKET
         </p>
@@ -48,7 +65,7 @@ export default function ProductTypes() {
           </Link>
         </div>
       </div>
-      <div className="item6 relative hover:-translate-y-1">
+      <div className="item6 relative hover:-translate-y-1 item">
         <p className="absolute top-1 left-2 bold text-white text-lg">BLAZER</p>
         <div className="w-full h-full top-0 left-0 bg-black opacity-0 hover:opacity-50 transition-opacity flex justify-center items-center">
           <Link href={"/products/blazer"}>
