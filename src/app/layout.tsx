@@ -12,7 +12,7 @@ export const metadata: Metadata = {
   keywords: "VHG Tailor, VHG, Tailor, VHG, VHG, Tailor, VHG, Tailor, vest, suit",
   robots: "index, follow",
   icons: {
-    icon: '/icon.ico',
+    icon: '/favicon.ico',
   },
 };
 
